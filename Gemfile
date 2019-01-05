@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in middleman-google_analytics_reporting.gemspec
 gemspec
 
+gem 'middleman-cli'
+
 group :development do
   gem 'rake'
   gem 'rdoc'
