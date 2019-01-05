@@ -16,6 +16,9 @@ module Middleman
         unless (reporting = app.extensions[:google_analytics_reporting])
           abort(NIL_GOOGLE_ANALYTICS_REPORTING_EXTENSION)
         end
+
+        gager = Gager::Cli::Application.new(*oauth.params)
+        gager.report(reporting.params)
       end
     end
 

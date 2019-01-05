@@ -8,7 +8,7 @@ module Middleman
       option :client_secret, nil, "OAuth client secret for Google APIs"
       option :token_store, nil, "Token store file name"
 
-      attr_reader :client_id, :client_secret, :token_store
+      USER_ID = "MIDDLEMAN_GOOGLE_ANALYTICS_REPORTING"
 
       def initialize(app, options_hash={}, &block)
         # Call super to build options from the options_hash
@@ -37,6 +37,10 @@ module Middleman
       #   def a_helper
       #   end
       # end
+
+      def params
+        [USER_ID, @client_id, @client_secret, {token_store_file: @token_store}]
+      end
     end
   end
 end

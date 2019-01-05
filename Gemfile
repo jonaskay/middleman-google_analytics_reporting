@@ -6,6 +6,8 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'middleman-cli'
+gem 'gager-cli', github: 'jonaskay/gager-cli'
+gem 'gager-core', github: 'jonaskay/gager-core'
 
 group :development do
   gem 'rake'

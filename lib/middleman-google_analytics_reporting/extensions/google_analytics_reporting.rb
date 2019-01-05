@@ -10,8 +10,6 @@ module Middleman
       option :metrics, nil, "Metrics"
       option :dimensions, nil, "Dimensions"
 
-      attr_reader :name, :view_id, :date_ranges, :metrics, :dimensions
-
       def initialize(app, options_hash={}, &block)
         # Call super to build options from the options_hash
         super
@@ -41,6 +39,16 @@ module Middleman
       #   def a_helper
       #   end
       # end
+
+      def params
+        {
+          name: @name,
+          view_id: @view_id,
+          date_ranges: @date_ranges,
+          metrics: @metrics,
+          dimensions: @dimensions
+        }
+      end
     end
   end
 end
