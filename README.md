@@ -1,8 +1,10 @@
 # Middleman::GoogleAnalyticsReporting
+[![Build Status](https://travis-ci.com/jonaskay/middleman-google_analytics_reporting.svg?branch=master)](https://travis-ci.com/jonaskay/middleman-google_analytics_reporting)
+
 Print Google Analytics reports for your [Middleman](https://middlemanapp.com/) project inside your terminal.
 
 ## Installation
-Add the following to your `Gemfile` and run `bundle install`
+Add the following to your `Gemfile` and run `bundle install`:
 
 ```ruby
 gem 'middleman-google_analytics_reporting',
