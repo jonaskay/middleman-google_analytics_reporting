@@ -61,3 +61,17 @@ Print your report:
 ```
 $ middleman report
 ```
+
+## Development
+
+Install dependencies:
+
+```
+$ bundle install
+```
+
+Run tests:
+
+```
+$ rake test
+```
