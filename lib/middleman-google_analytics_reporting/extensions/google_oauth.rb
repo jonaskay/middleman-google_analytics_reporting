@@ -38,6 +38,14 @@ module Middleman
       #   end
       # end
 
+      def client_id
+        @client_id
+      end
+
+      def client_secret
+        @client_secret
+      end
+
       def params
         [USER_ID, @client_id, @client_secret, {token_store_file: @token_store}]
       end
